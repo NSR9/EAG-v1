@@ -1,0 +1,15 @@
+{
+    "manifest_version": 3,
+    "name": "Ask PUSHPA",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "action": {
+      "default_popup": "popup.html",
+      "default_icon": "pushpa-icon.png"
+    },
+    "icons": {
+    "48": "pushpa-icon.png",
+    "128": "pushpa-icon.png"
+  }
+  }
+  

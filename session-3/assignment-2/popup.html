@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ask PUSHPA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 15px;
+        background-color: #121212;
+        color: #fff;
+        width: 350px;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        color: #ff4c4c;
+        margin-top: 5px;
+        font-size: 1.6rem;
+        font-weight: bold;
+      }
+
+      .pushpa-avatar {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+
+      .pushpa-avatar img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 3px solid #dc3545;
+        box-shadow: 0 0 12px rgba(220, 53, 69, 0.6);
+      }
+
+      .chat-box {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        border: 1px solid #dc3545;
+        background: #1e1e1e;
+        border-radius: 10px;
+        height: 280px;
+        padding: 10px;
+        overflow-y: auto;
+        margin-bottom: 10px;
+      }
+
+      .message {
+        max-width: 80%;
+        padding: 10px 14px;
+        border-radius: 10px;
+        font-size: 0.9rem;
+        white-space: pre-wrap;
+      }
+
+      .user {
+        align-self: flex-end;
+        background: #333;
+        color: #fff;
+        border-top-right-radius: 0;
+      }
+
+      .bot {
+        align-self: flex-start;
+        background: #dc3545;
+        color: #fff;
+        border-top-left-radius: 0;
+      }
+
+      .input-group {
+        display: flex;
+        gap: 8px;
+      }
+
+      #query {
+        flex: 1;
+        padding: 10px;
+        border-radius: 8px;
+        border: none;
+        background: #222;
+        color: #fff;
+      }
+
+      #runAgent {
+        padding: 10px 15px;
+        background-color: #dc3545;
+        color: white;
+        font-weight: bold;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      #runAgent:hover {
+        background-color: #ff4c4c;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Ask PUSHPA</h2>
+
+    <div class="pushpa-avatar">
+      <img src="pushpa-icon.png" alt="Pushpa Icon" />
+    </div>
+
+    <div class="chat-box" id="chatBox"></div>
+
+    <div class="input-group">
+      <input type="text" id="query" placeholder="Ask your agent..." />
+      <button id="runAgent">Ask</button>
+    </div>
+
+    <audio id="thaggedeLe">
+      <source src="thaggede-le.mp3" type="audio/mpeg" />
+    </audio>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

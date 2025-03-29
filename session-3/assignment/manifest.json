@@ -1,0 +1,17 @@
+
+{
+    "manifest_version": 3,
+    "name": "Agentic GitHub Env Setup",
+    "version": "1.0",
+    "description": "Clone and auto-setup GitHub repos using an LLM agent",
+    "permissions": ["storage", "scripting", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    },
+    "background": {
+      "service_worker": "background.js"
+    },
+    "host_permissions": [
+      "http://localhost:5000/*"
+    ]
+  }
